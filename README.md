@@ -1,0 +1,132 @@
+﻿# 🚀 免费节点自动测活订阅池 (含真实家宽/住宅IP甄选)
+
+> 👤 **定制规范命名**: 所有订阅节点均重命名为 `国旗 地区 序号 (家宽) - xiaohe`
+> ⚡ **真实可用保障**: 所有节点由 `sing-box vv1.14.0` 内核建立实际代理隧道, 完成真实 HTTPS 双向传输握手 + 出口 IP 穿透验证 + Cloudflare 限速下载断流检测 + TLS 证书校验 (MITM 劫持识别), 拒绝虚假通畅、断流节点与高危劫持节点。
+> 🛡️ **全协议支持**: VLESS (Reality/Vision) · VMESS · Trojan · Shadowsocks · Hysteria2 · TUIC · AnyTLS
+
+---
+
+## 📌 全部节点总订阅链接
+
+| 客户端 / 格式类型 | 节点总数 | 免翻 CDN 订阅直链 (国内直连) | 官方原生 Raw 直链 (开启代理) |
+| :--- | :---: | :--- | :--- |
+| 🚀 **Clash (YAML 格式)** | `723` | [免翻 CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/clash.yaml) | [官方 Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/clash.yaml) |
+| ⚡ **V2RayN (Base64 格式)** | `723` | [免翻 CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/v2ray.txt) | [官方 Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/v2ray.txt) |
+| 📦 **sing-box (JSON 格式)** | `723` | [免翻 CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/singbox.json) | [官方 Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/singbox.json) |
+
+---
+
+## 🏠 按照家宽分类节点订阅 (住宅 IP 专区)
+
+> 家宽判定六重信号: ① ip-api.com `hosting` 字段 ② `mobile` 移动网络字段 ③ Cloudflare/主流 CDN Anycast 网段比对 ④ MaxMind GeoLite2 ASN 白/黑名单 (覆盖 60+ 国家主流民用运营商) ⑤ rDNS/ISP 名称特征 ⑥ Scamalytics 风控评分复核 (fraud ≥75 降级、≥90 剔除)。排除所有云主机/数据中心/CDN 任播, 保留真实民用宽带与移动网络。
+
+| 家宽地区 | 节点数 | V2RayN 专属订阅 | Clash 专属订阅 | sing-box 专属订阅 |
+| :--- | :---: | :---: | :---: | :---: |
+| 🇹🇼 中国台湾 (Taiwan) | 2 | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/residential-by-country/TW.txt) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/residential-by-country/TW.txt) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/residential-by-country/clash-TW.yaml) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/residential-by-country/clash-TW.yaml) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/residential-by-country/singbox-TW.json) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/residential-by-country/singbox-TW.json) |
+| 🇯🇵 日本 (Japan) | 1 | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/residential-by-country/JP.txt) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/residential-by-country/JP.txt) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/residential-by-country/clash-JP.yaml) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/residential-by-country/clash-JP.yaml) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/residential-by-country/singbox-JP.json) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/residential-by-country/singbox-JP.json) |
+| 🇷🇴 罗马尼亚 (Romania) | 1 | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/residential-by-country/RO.txt) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/residential-by-country/RO.txt) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/residential-by-country/clash-RO.yaml) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/residential-by-country/clash-RO.yaml) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/residential-by-country/singbox-RO.json) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/residential-by-country/singbox-RO.json) |
+
+---
+
+## 🗺️ 按照国家分类节点订阅 (非家宽/数据中心节点)
+
+| 地区/国家 | 节点数 | V2RayN 专属订阅 | Clash 专属订阅 | sing-box 专属订阅 |
+| :--- | :---: | :---: | :---: | :---: |
+| 🇺🇸 美国 (United States) | 210 | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/US.txt) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/US.txt) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/clash-US.yaml) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/clash-US.yaml) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/singbox-US.json) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/singbox-US.json) |
+| 🇳🇱 (https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/singbox-DE.json) |
+| 🇯🇵 日本 (Japan) | 56 | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/JP.txt) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/JP.txt) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/clash-JP.yaml) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/clash-JP.yaml) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/singbox-JP.json) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/singbox-JP.json) |
+| 🇬🇧(https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/singbox-GB.json) |
+| 🇭🇰 中国香港 (Hong Kong) | 34 | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/HK.txt) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/HK.txt) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/clash-HK.yaml) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/clash-HK.yaml) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/singbox-HK.json) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/singbox-HK.json) |
+| 🇸🇬 新加坡 (Singapore) | 26 | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/SG.txt) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/SG.txt) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/clash-SG.yaml) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/clash-SG.yaml) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/singbox-SG.json) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/singbox-SG.json) |
+| 🇨🇦 (https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/singbox-PL.json) |
+| 🇹🇼 中国台湾 (Taiwan) | 11 | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/TW.txt) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/TW.txt) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/clash-TW.yaml) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/clash-TW.yaml) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/singbox-TW.json) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/singbox-TW.json) |
+| 🇰🇷 韩国 (South Korea) | 9 | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/KR.txt) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/KR.txt) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/clash-KR.yaml) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/clash-KR.yaml) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/singbox-KR.json) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/singbox-KR.json) |
+| 🇨🇭 (https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/singbox-AE.json) |
+| 🇸🇨 (https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/singbox-IT.json) |
+| 🇰🇿(https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/singbox-KZ.json) |
+| 🇹🇷 土耳其 (Turkey) | 5 | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/TR.txt) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/TR.txt) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/clash-TR.yaml) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/clash-TR.yaml) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/singbox-TR.json) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/singbox-TR.json) |
+| 🇦🇺 (https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/singbox-AU.json) |
+| 🇪🇸 西班牙 (Spain) | 5 | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/ES.txt) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/ES.txt) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/clash-ES.yaml) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/clash-ES.yaml) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/singbox-ES.json) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/singbox-ES.json) |
+| 🇪🇪 (https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/singbox-FI.json) |
+| 🇮🇳 印度 (India) | 5 | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/IN.txt) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/IN.txt) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/clash-IN.yaml) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/clash-IN.yaml) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/singbox-IN.json) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/singbox-IN.json) |
+| 🇿🇦 (https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/singbox-SE.json) |
+| 🇲🇾 马来西亚 (Malaysia) | 3 | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/MY.txt) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/MY.txt) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/clash-MY.yaml) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/clash-MY.yaml) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/singbox-MY.json) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/singbox-MY.json) |
+| 🇳🇴 (https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/singbox-LT.json) |
+| 🇺🇿 (https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/singbox-YE.json) |
+| 🇮🇪 (https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/singbox-LV.json) |
+| 🇮🇩 印尼 (Indonesia) | 1 | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/ID.txt) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/ID.txt) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/clash-ID.yaml) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/clash-ID.yaml) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/singbox-ID.json) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/singbox-ID.json) |
+| 🇦🇿(https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/singbox-AZ.json) |
+| 🇲🇲 缅甸 (Myanmar) | 1 | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/MM.txt) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/MM.txt) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/clash-MM.yaml) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/clash-MM.yaml) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/singbox-MM.json) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/singbox-MM.json) |
+| 🇸🇩 (https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/singbox-AF.json) |
+| 🇹🇭 泰国 (Thailand) | 1 | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/TH.txt) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/TH.txt) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/clash-TH.yaml) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/clash-TH.yaml) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/singbox-TH.json) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/singbox-TH.json) |
+| 🇬🇹(https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/singbox-LU.json) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/singbox-LU.json) |
+| 🇮🇱 以色列 (Israel) | 1 | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/IL.txt) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/IL.txt) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/clash-IL.yaml) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/clash-IL.yaml) | [CDN 直链](https://cdn.jsdelivr.net/gh/hezhanleiok/freesub@main/output/by-country/singbox-IL.json) · [Raw 直链](https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/by-country/singbox-IL.json) |
+
+---
+
+## 🔒 私有仓库（Private）无感免翻订阅方案 (基于 Cloudflare Workers)
+
+> 如果你希望将本 GitHub 仓库设置为 **Private (私有仓库)** 保护节点资产，外部客户端无法直接拉取原生 Raw 或公共 CDN 链接，可以通过以下 Cloudflare Worker 搭建轻量级私密网关反代：
+
+### 1. 获取 GitHub 永久个人令牌 (PAT)
+1. 进入 GitHub -> **Settings** -> **Developer Settings** -> **Personal access tokens (classic)**。
+2. 点击 **Generate new token (classic)**，勾选 `repo` 权限，有效期设为 `No expiration`（永不过期）。
+3. 复制保存生成的以 `ghp_` 开头的 Token。
+
+### 2. 部署 Cloudflare Worker
+登录 Cloudflare Dashboard，创建一个新的 Worker，复制以下脚本粘贴并部署（把 `OWNER`/`REPO`/`GITHUB_TOKEN` 改成你自己的）：
+
+```javascript
+export default {
+  async fetch(request) {
+    const GITHUB_TOKEN = "ghp_你的GitHub永久访问令牌";
+    const OWNER = "hezhanleiok";
+    const REPO = "freesub";
+    const BRANCH = "main";
+
+    const url = new URL(request.url);
+    const filePath = "output" + url.pathname;
+    const ghUrl = "https://raw.githubusercontent.com/" + OWNER + "/" + REPO + "/" + BRANCH + "/" + filePath;
+
+    const res = await fetch(ghUrl, {
+      headers: {
+        "Authorization": "token " + GITHUB_TOKEN,
+        "User-Agent": "Cloudflare-Worker"
+      }
+    });
+
+    if (!res.ok) {
+      return new Response("Not Found", { status: 404 });
+    }
+
+    return new Response(await res.text(), {
+      headers: {
+        "Content-Type": "text/plain; charset=utf-8",
+        "Cache-Control": "no-cache"
+      }
+    });
+  }
+}
+```
+
+### 3. 私有订阅链接映射方式
+部署后 Worker 会分配一个专属域名（例如 `my-sub.yourname.workers.dev`），你的客户端可以直接无感订阅：
+* **总 V2RayN 订阅**: `https://你的域名.workers.dev/v2ray.txt`
+* **总 Clash 订阅**: `https://你的域名.workers.dev/clash.yaml`
+* **总 sing-box 订阅**: `https://你的域名.workers.dev/singbox.json`
+* **台湾家宽 V2RayN**: `https://你的域名.workers.dev/residential-by-country/TW.txt`
+* **香港家宽 Clash**: `https://你的域名.workers.dev/residential-by-country/clash-HK.yaml`
+* **日本家宽 sing-box**: `https://你的域名.workers.dev/residential-by-country/singbox-JP.json`
+
+---
+
+## ⭐ 项目热度
+
+[![Star History Chart](https://api.star-history.com/svg?repos=hezhanleiok/freesub&type=Date)](https://star-history.com/#hezhanleiok/freesub&Date)
+
+---
+
+## 🛠️ 项目使用说明
+1. **自动更新机制**：GitHub Actions 每 6 小时全自动运行并刷新上述全部订阅与数据。
+2. **测活标准**：节点必须通过 ① 端口预检 ② sing-box 实际隧道 3 个 generate_204 探测 ③ 真实出口 IP 穿透获取 ④ Cloudflare 5MB 限时下载 (吞吐 ≥ 70KB/s) ⑤ TLS 证书校验非 MITM, 方可入库。
+3. **多客户端兼容**：Clash / v2rayN / sing-box 全格式订阅。
