@@ -5,26 +5,28 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
-      "server": "89.47.55.9",
-      "server_port": 8443,
-      "uuid": "4350213a-b4e7-262a-0bd7-bd16957cf71a",
+      "tag": "🇮🇶 IQ 01 - xiaohe",
+      "server": "172.67.140.37",
+      "server_port": 443,
+      "uuid": "527451fe-ee1f-4e6f-94ca-808f055f7c9b",
       "tls": {
         "enabled": true,
-        "server_name": "www.sony.com",
+        "server_name": "05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "TWaatavWGcWV-E7c4AXmBXypLKJzm6eR3FGG61spayQ",
-          "short_id": ""
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
+        "type": "ws",
+        "path": "/vl/ERYN0G44hia16zhR",
+        "headers": {
+          "Host": "05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev"
+        }
       }
     },
     {
@@ -32,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
+        "🇮🇶 IQ 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
+        "🇮🇶 IQ 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
