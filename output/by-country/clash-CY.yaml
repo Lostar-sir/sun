@@ -15,7 +15,7 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: qq
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
   server: 45.9.2.171
   port: 8443
@@ -43,7 +43,7 @@ proxies:
   servername: www.amazon.com
   client-fingerprint: chrome
 - name: 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
-  server: preview.netraidly.ru
+  server: 5.253.42.163
   port: 40443
   udp: true
   type: vless
@@ -54,7 +54,7 @@ proxies:
     public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
     short-id: 84fc
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
