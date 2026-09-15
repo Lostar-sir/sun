@@ -15,7 +15,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -27,29 +27,6 @@
     {
       "type": "vless",
       "tag": "🇬🇷 希腊 (Greece) 02 - xiaohe",
-      "server": "104.21.64.209",
-      "server_port": 443,
-      "uuid": "1aa96574-c28b-4ee9-855d-ebdbbf1f7e90",
-      "tls": {
-        "enabled": true,
-        "server_name": "6-M13.0eE25773-d3d3-479D-A8Ff-3F51d1D20031.kdNs.fR",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ED3ZQPu7lqyeDGD58KabZ",
-        "headers": {
-          "Host": "6-M13.0ee25773-D3D3-479D-a8ff-3F51d1d20031.kDnS.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇷 希腊 (Greece) 03 - xiaohe",
       "server": "185.126.238.87",
       "server_port": 2083,
       "uuid": "7668f678-faee-40cc-9b56-9c39dc773388",
@@ -64,8 +41,7 @@
       "outbounds": [
         "auto",
         "🇬🇷 希腊 (Greece) 01 - xiaohe",
-        "🇬🇷 希腊 (Greece) 02 - xiaohe",
-        "🇬🇷 希腊 (Greece) 03 - xiaohe"
+        "🇬🇷 希腊 (Greece) 02 - xiaohe"
       ]
     },
     {
@@ -73,8 +49,7 @@
       "tag": "auto",
       "outbounds": [
         "🇬🇷 希腊 (Greece) 01 - xiaohe",
-        "🇬🇷 希腊 (Greece) 02 - xiaohe",
-        "🇬🇷 希腊 (Greece) 03 - xiaohe"
+        "🇬🇷 希腊 (Greece) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
