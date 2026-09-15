@@ -18,6 +18,21 @@ proxies:
   servername: deepl.com
   client-fingerprint: edge
 - name: 🇬🇷 希腊 (Greece) 02 - xiaohe
+  server: 104.21.64.209
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1aa96574-c28b-4ee9-855d-ebdbbf1f7e90
+  tls: true
+  servername: 6-M13.0eE25773-d3d3-479D-A8Ff-3F51d1D20031.kdNs.fR
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ED3ZQPu7lqyeDGD58KabZ
+    headers:
+      Host: 6-M13.0ee25773-D3D3-479D-a8ff-3F51d1d20031.kDnS.fr
+- name: 🇬🇷 希腊 (Greece) 03 - xiaohe
   server: 185.126.238.87
   port: 2083
   udp: true
@@ -33,6 +48,7 @@ proxy-groups:
   - AUTO
   - 🇬🇷 希腊 (Greece) 01 - xiaohe
   - 🇬🇷 希腊 (Greece) 02 - xiaohe
+  - 🇬🇷 希腊 (Greece) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -40,5 +56,6 @@ proxy-groups:
   proxies:
   - 🇬🇷 希腊 (Greece) 01 - xiaohe
   - 🇬🇷 希腊 (Greece) 02 - xiaohe
+  - 🇬🇷 希腊 (Greece) 03 - xiaohe
 rules:
 - MATCH,PROXIES
