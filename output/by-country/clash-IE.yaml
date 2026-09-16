@@ -4,32 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇴🇲 OM 01 - xiaohe
-  server: 146.70.37.253
+- name: 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
+  server: ir-new.failspace.top
   port: 443
   udp: true
   type: vless
-  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
   tls: true
-  servername: kkkk-xcd.pages.dev
+  servername: ir-new.failspace.top
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: kkkk-xcd.pages.dev
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇴🇲 OM 01 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇴🇲 OM 01 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
 rules:
 - MATCH,PROXIES
