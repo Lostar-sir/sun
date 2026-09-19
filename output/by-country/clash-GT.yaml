@@ -4,32 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇬 KG 01 - xiaohe
-  server: 104.24.31.89
+- name: 🇬🇹 GT 01 - xiaohe
+  server: 185.47.254.251
   port: 443
   udp: true
   type: vless
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  uuid: 878fb7f7-fc65-465e-a352-17c7216c6f3d
+  flow: xtls-rprx-vision
   tls: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
-  skip-cert-verify: true
+  reality-opts:
+    public-key: 6-_ZidygR8PRt4gtHlGCAW-PPmjEIm7Wn7MZqJU1z1Q
+    short-id: 6c059ecfddf9b179
+  servername: gateway.icloud.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: rayan-007.nastaran.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇬 KG 01 - xiaohe
+  - 🇬🇹 GT 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇬 KG 01 - xiaohe
+  - 🇬🇹 GT 01 - xiaohe
 rules:
 - MATCH,PROXIES
