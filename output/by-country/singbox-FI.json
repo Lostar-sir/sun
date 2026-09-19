@@ -12,23 +12,26 @@
       "password": "o2rw2hICwu1blrr_gZAl2Q"
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-      "server": "185.79.138.71",
+      "server": "150.241.71.148",
       "server_port": 448,
-      "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
+      "password": "6fY77UmuJ6BEK7n0qv433JrPNjCMeZQV",
       "tls": {
         "enabled": true,
-        "server_name": "www.samsung.com",
+        "server_name": "kiev.gosgenarchive.com",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
-          "short_id": "cd21e552537c7c0b"
+          "fingerprint": "firefox"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TrojanGRPC"
       }
     },
     {
