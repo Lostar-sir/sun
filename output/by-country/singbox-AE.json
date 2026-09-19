@@ -12,7 +12,11 @@
       "tls": {
         "enabled": true,
         "server_name": "srv-21bac9.vless.monster",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       },
       "transport": {
         "type": "grpc",
@@ -36,30 +40,9 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - xiaohe",
-      "server": "31.58.181.88",
-      "server_port": 8443,
-      "uuid": "4a64b0c2-de7e-4e32-b931-247be6dc4488",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "tradingview.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc",
-          "short_id": ""
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 04 - xiaohe",
-      "server": "85.204.107.177",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - xiaohe",
+      "server": "85.204.107.176",
       "server_port": 8080,
       "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
       "tls": {
@@ -70,15 +53,20 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 05 - xiaohe",
-      "server": "uae.unixzone.us",
-      "server_port": 22573,
-      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - xiaohe",
+      "server": "95.85.89.70",
+      "server_port": 81,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true
+      },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/trade?ed=2560fp=chrome",
         "headers": {
-          "Host": "uae.unixzone.us"
+          "Host": "cdn8848.776676.xyz"
         }
       }
     },
@@ -90,8 +78,7 @@
         "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
         "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
         "🇦🇪 阿联酋 (UAE) 03 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 04 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 05 - xiaohe"
+        "🇦🇪 阿联酋 (UAE) 04 - xiaohe"
       ]
     },
     {
@@ -101,8 +88,7 @@
         "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
         "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
         "🇦🇪 阿联酋 (UAE) 03 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 04 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 05 - xiaohe"
+        "🇦🇪 阿联酋 (UAE) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

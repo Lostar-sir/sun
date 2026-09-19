@@ -40,7 +40,7 @@ proxies:
     public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
     short-id: f7b2
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇳🇴 挪威 (Norway) 04 - xiaohe
   server: 46.8.210.129
   port: 22443
