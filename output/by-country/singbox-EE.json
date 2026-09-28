@@ -10,7 +10,11 @@
       "server_port": 443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
       "transport": {
-        "type": "ws"
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "estproxy4.lockdwn.com"
+        }
       }
     },
     {
@@ -36,7 +40,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -72,20 +76,20 @@
       "tls": {
         "enabled": true,
         "server_name": "estproxy4.lockdwn.com",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       }
     },
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe",
-      "server": "94.183.170.65",
-      "server_port": 443,
-      "password": "e60bc99b-6630-4799-af84-f90ebdc643b6",
-      "tls": {
-        "enabled": true,
-        "server_name": "hys2.arkonsoft.top",
-        "insecure": false
-      }
+      "server": "80.97.27.106",
+      "server_port": 114,
+      "method": "chacha20-ietf-poly1305",
+      "password": "9binmVT58Wnr6vNzxu_JmpzEW6i-FgAj"
     },
     {
       "type": "selector",
