@@ -24,14 +24,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
-  server: 66.163.118.73
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
   server: 193.238.154.5
   port: 443
   udp: true
@@ -44,7 +36,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: cdn.v1.AssetService
-- name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
+- name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
   server: mygptagent.org
   port: 443
   udp: true
@@ -60,6 +52,14 @@ proxies:
     path: /linkvws
     headers:
       Host: mygptagent.org
+- name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
+  server: 66.163.118.73
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
