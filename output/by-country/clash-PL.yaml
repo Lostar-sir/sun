@@ -5,14 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
+  server: 70.34.255.101
+  port: 80
+  udp: true
+  type: vless
+  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   server: 222.167.245.240
   port: 28015
   udp: true
   type: hysteria2
   password: e19b5aa3-16c9-435a-8bc9-76f2f6ddff43
   sni: api-test-udp-traffic.kaneki.cfd
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
   server: 144.31.4.193
   port: 444
   udp: true
@@ -27,27 +36,14 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: ''
-- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: 202.78.163.237
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  server: cheerful-swan.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  server: 83.168.95.145
-  port: 443
-  udp: true
-  type: vless
-  uuid: 82f37352-85e5-49bb-9edc-a80997065659
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
-    short-id: d345ad4657adeef9
-  servername: google.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 05 - xiaohe
   server: pl-waw.dontblockmepls.com
   port: 2063
@@ -60,6 +56,32 @@ proxies:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
   servername: rusbid.de
   client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
+  server: 188.114.96.19
+  port: 80
+  udp: true
+  type: vmess
+  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
+  server: 83.168.95.145
+  port: 443
+  udp: true
+  type: vless
+  uuid: 82f37352-85e5-49bb-9edc-a80997065659
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
+    short-id: d345ad4657adeef9
+  servername: google.com
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -70,6 +92,8 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
   - 🇵🇱 波兰 (Poland) 05 - xiaohe
+  - 🇵🇱 波兰 (Poland) 06 - xiaohe
+  - 🇵🇱 波兰 (Poland) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -80,5 +104,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
   - 🇵🇱 波兰 (Poland) 05 - xiaohe
+  - 🇵🇱 波兰 (Poland) 06 - xiaohe
+  - 🇵🇱 波兰 (Poland) 07 - xiaohe
 rules:
 - MATCH,PROXIES
