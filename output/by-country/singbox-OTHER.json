@@ -4,27 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.21.72.213",
+      "server": "172.64.150.28",
       "server_port": 443,
-      "uuid": "a2c57a6c-dacb-44d1-9055-fb42d4c888a5",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "pew.dianawmoon.dpdns.org",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
+        "server_name": "www.calmlunch.com",
+        "insecure": false
       },
       "transport": {
-        "type": "httpupgrade",
-        "path": "/27729/dianahtupgd",
-        "host": "pew.dianawmoon.dpdns.org"
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
       }
     },
     {
