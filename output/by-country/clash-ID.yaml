@@ -15,10 +15,10 @@ proxies:
   reality-opts:
     public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
   servername: aws.amazon.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇮🇩 印尼 (Indonesia) 02 - xiaohe
-  server: funagfr.alixxplay.com
-  port: 61847
+  server: apinbxs.zalolink.com
+  port: 31094
   udp: true
   type: vless
   uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134

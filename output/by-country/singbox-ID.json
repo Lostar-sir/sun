@@ -15,7 +15,7 @@
         "server_name": "aws.amazon.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -27,8 +27,8 @@
     {
       "type": "vless",
       "tag": "🇮🇩 印尼 (Indonesia) 02 - xiaohe",
-      "server": "funagfr.alixxplay.com",
-      "server_port": 61847,
+      "server": "apinbxs.zalolink.com",
+      "server_port": 31094,
       "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
       "flow": "xtls-rprx-vision",
       "tls": {
