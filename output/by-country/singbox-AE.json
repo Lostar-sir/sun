@@ -22,22 +22,25 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
-      "server": "31.59.150.11",
-      "server_port": 443,
-      "uuid": "cc4d63e2-3a86-49b3-9598-328bbe93e56c",
-      "flow": "xtls-rprx-vision",
+      "server": "122.8.45.4",
+      "server_port": 8443,
+      "uuid": "2d24e797-ec6c-0808-dd31-9cd22b5dfdc7",
       "tls": {
         "enabled": true,
-        "server_name": "google.com",
+        "server_name": "www.canon.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "yI6maXxTQ8zRHg39X8YMQtKW-IVfNIn0_OCUIQKmcXw",
+          "public_key": "iVDh09Vm2DqZMNQoUdf-LCZ6TqVGb9mLXnClAK2LRj4",
           "short_id": ""
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
       }
     },
     {
