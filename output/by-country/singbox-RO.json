@@ -6,7 +6,7 @@
     {
       "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 01 - xiaohe",
-      "server": "77.74.123.105",
+      "server": "77.74.123.99",
       "server_port": 8443,
       "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
       "tls": {
@@ -16,16 +16,51 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 02 - xiaohe",
-      "server": "bogging-eyeteeth-fly.freesocks.work",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "QFWzCw2uX9B9i6qAYeFBIE"
+      "server": "103.126.51.51",
+      "server_port": 8443,
+      "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
+      "tls": {
+        "enabled": true,
+        "server_name": "ocober-romania-new.yyuyy.com",
+        "insecure": true
+      }
     },
     {
       "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 03 - xiaohe",
+      "server": "162.249.126.39",
+      "server_port": 8443,
+      "password": "9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z",
+      "tls": {
+        "enabled": true,
+        "server_name": "hop-germany-september.dynuddns.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - xiaohe",
+      "server": "85.90.196.11",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "fzo5i.ir46.90k.hh.ov0.kdns.fr",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/glasspanel/guest000_0_5de14443985f/",
+        "headers": {
+          "Host": "fzo5i.ir46.90k.hh.ov0.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 05 - xiaohe",
       "server": "162.249.125.133",
       "server_port": 443,
       "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
@@ -37,39 +72,6 @@
       "obfs": {
         "type": "salamander",
         "password": "c1b4086fea89914496c7e10967a419216566"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - xiaohe",
-      "server": "103.126.51.50",
-      "server_port": 8443,
-      "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
-      "tls": {
-        "enabled": true,
-        "server_name": "ocober-romania-new.yyuyy.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 05 - xiaohe",
-      "server": "109.104.106.149",
-      "server_port": 443,
-      "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "d3-ro.cloud-cdn.xyz",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "a_v5l6R-rpVGlENLeONW4sz-GdRwIoDqISOWXGov8nw",
-          "short_id": "87709fed663228e5"
-        }
       }
     },
     {
