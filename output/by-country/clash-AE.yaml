@@ -29,7 +29,7 @@ proxies:
     public-key: 5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I
     short-id: 6f76ad09
   servername: addons.mozilla.org
-  client-fingerprint: randomized
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   server: 130.49.161.70
   port: 443
@@ -41,17 +41,6 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: 84.235.244.108
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   server: 146.70.102.82
   port: 443
   udp: true
@@ -63,18 +52,18 @@ proxies:
     public-key: GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k
     short-id: 002fb4ec7b3088cc
   servername: www.datadoghq.com
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  server: 78.40.194.233
-  port: 443
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+  server: uae.unixzone.us
+  port: 22573
   udp: true
   type: vless
-  uuid: 5b5e4cbf-2366-499a-8327-0cd9918c687d
-  flow: xtls-rprx-vision
-  tls: true
-  servername: cdn2.surfweb.club
-  skip-cert-verify: false
-  client-fingerprint: firefox
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -85,7 +74,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -96,6 +84,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
 rules:
 - MATCH,PROXIES
