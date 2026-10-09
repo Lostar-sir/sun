@@ -4,23 +4,28 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 01 - xiaohe",
-      "server": "185.95.231.156",
+      "type": "trojan",
+      "tag": "🇮🇶 IQ 01 - xiaohe",
+      "server": "104.21.29.250",
       "server_port": 443,
-      "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
-      "flow": "xtls-rprx-vision",
+      "password": "LcICDcp!jD9TFV$NbH",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "dl2uF-iVdeZILZ3E86rK18.Hhvt37tjm2XBOsQL5HXogN-Y.woRKERS.dEv",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
-          "short_id": "a3a578ab"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tr/pg4wM48V9O859nmqsJg22EOFKN4S570y?ed",
+        "headers": {
+          "Host": "dl2uf-ivdezilz3e86rk18.hhvt37tjm2xbosql5hxogn-y.workers.dev"
         }
       }
     },
@@ -29,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇱 以色列 (Israel) 01 - xiaohe"
+        "🇮🇶 IQ 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇱 以色列 (Israel) 01 - xiaohe"
+        "🇮🇶 IQ 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

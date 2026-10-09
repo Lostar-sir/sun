@@ -7,37 +7,17 @@
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
       "server": "95.85.253.241",
-      "server_port": 2083,
+      "server_port": 2087,
       "uuid": "ee0a38e3-d148-48ac-ba99-5133446c2377",
       "tls": {
         "enabled": true,
         "server_name": "95.85.253.241",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
-      "server": "95.85.253.241",
-      "server_port": 2053,
-      "uuid": "ee0a38e3-d148-48ac-ba99-5133446c2377",
-      "tls": {
-        "enabled": true,
-        "server_name": "95.85.253.241",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "insecure": false
       }
     },
     {
       "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 03 - xiaohe",
+      "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
       "server": "202.78.163.237",
       "server_port": 443,
       "password": "UX82473651",
@@ -49,23 +29,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 04 - xiaohe",
-      "server": "95.85.253.241",
-      "server_port": 2087,
-      "uuid": "ee0a38e3-d148-48ac-ba99-5133446c2377",
-      "tls": {
-        "enabled": true,
-        "server_name": "95.85.253.241",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 05 - xiaohe",
+      "tag": "🇵🇱 波兰 (Poland) 03 - xiaohe",
       "server": "177.1.192.72",
       "server_port": 443,
       "uuid": "4d852af3-a121-41aa-9aed-4ca40a6f7b4d",
@@ -75,13 +39,37 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "randomized"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
           "public_key": "y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM",
           "short_id": "46455ff0"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 04 - xiaohe",
+      "server": "95.85.253.241",
+      "server_port": 2083,
+      "uuid": "ee0a38e3-d148-48ac-ba99-5133446c2377",
+      "tls": {
+        "enabled": true,
+        "server_name": "95.85.253.241",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇵🇱 波兰 (Poland) 05 - xiaohe",
+      "server": "78.17.128.153",
+      "server_port": 35076,
+      "password": "b4c8ee9caa74b7ba0a61",
+      "tls": {
+        "enabled": true,
+        "server_name": "scrap.halyvanedorogo.ru",
+        "insecure": true
       }
     },
     {
@@ -108,7 +96,7 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 07 - xiaohe",
-      "server": "31.77.13.19",
+      "server": "pl-waw.dontblockmepls.com",
       "server_port": 2063,
       "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
       "flow": "xtls-rprx-vision",
@@ -117,7 +105,7 @@
         "server_name": "rusbid.de",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -127,15 +115,19 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 08 - xiaohe",
-      "server": "admin.wwwinternetvideo.click",
-      "server_port": 443,
-      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
+      "server": "95.85.253.241",
+      "server_port": 2053,
+      "uuid": "ee0a38e3-d148-48ac-ba99-5133446c2377",
       "tls": {
         "enabled": true,
-        "server_name": "admin.wwwinternetvideo.click",
-        "insecure": true
+        "server_name": "95.85.253.241",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       }
     },
     {
