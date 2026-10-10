@@ -12,7 +12,7 @@
       "tls": {
         "enabled": true,
         "server_name": "grape-test-italy.dynuddns.net",
-        "insecure": true
+        "insecure": false
       }
     },
     {
