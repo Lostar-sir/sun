@@ -14,19 +14,14 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 02 - xiaohe",
-      "server": "104.16.10.2",
-      "server_port": 443,
+      "server": "103.86.49.57",
+      "server_port": 80,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
-      "tls": {
-        "enabled": true,
-        "server_name": "v2ray.simspeedup.com",
-        "insecure": false
-      },
       "transport": {
         "type": "ws",
         "path": "/ws",
         "headers": {
-          "Host": "v2ray.simspeedup.com"
+          "Host": "aIs.SpEeDtEsT.nEt"
         }
       }
     },
@@ -42,7 +37,7 @@
         "server_name": "www.kaidee.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,

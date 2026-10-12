@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
-  server: 77.74.123.109
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  sni: grape-test-italy.dynuddns.net
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  server: 194.68.44.42
-  port: 64546
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: U83u9OGpvSatIUW7LsWffr
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
   server: 162.249.125.133
   port: 443
   udp: true
@@ -29,8 +14,30 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
+  server: 194.68.44.42
+  port: 64546
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: U83u9OGpvSatIUW7LsWffr
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
+  server: 103.126.51.58
+  port: 995
+  udp: true
+  type: vless
+  uuid: 1fc575d3-81bb-44d5-9efa-4131c7cc677a
+  tls: true
+  servername: ocober-romania-new.yyuyy.com
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: httpupgrade
+  httpupgrade-opts:
+    path: /api/v1
+    headers:
+      Host: ocober-romania-new.yyuyy.com
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
-  server: 154.46.31.106
+  server: bogging-eyeteeth-fly.freesocks.work
   port: 443
   udp: true
   type: ss
