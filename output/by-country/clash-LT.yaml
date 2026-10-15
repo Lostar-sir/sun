@@ -20,11 +20,11 @@ proxies:
   password: Lp27rqyJq72bZsqX
 - name: 🇱🇹 立陶宛 (Lithuania) 03 - xiaohe
   server: 195.238.126.20
-  port: 9012
+  port: 9011
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: xaupMUvhptwxdDUg
+  password: M3t2ZEQcMGRWBjRa
 - name: 🇱🇹 立陶宛 (Lithuania) 04 - xiaohe
   server: 84.32.109.20
   port: 443
