@@ -14,25 +14,35 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 02 - xiaohe",
-      "server": "104.16.111.193",
-      "server_port": 443,
-      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
+      "server": "103.40.119.56",
+      "server_port": 11000,
+      "uuid": "0e46345c-f33b-4f9b-b8ec-90e7c986af7e",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "v2ray.simspeedup.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "v2ray.simspeedup.com"
+        "server_name": "s0.awsstatic.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sFRyah8EOSGcab8TfIdkq53c5HBSwAVfYQCyvZ0_BG4",
+          "short_id": ""
         }
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇹🇭 泰国 (Thailand) 03 - xiaohe",
+      "server": "pphfree2.mvpnpvpn.de5.net",
+      "server_port": 52351,
+      "method": "aes-256-gcm",
+      "password": "sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c="
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 04 - xiaohe",
       "server": "v2ray.simspeedup.com",
       "server_port": 80,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
@@ -40,17 +50,9 @@
         "type": "ws",
         "path": "/ws",
         "headers": {
-          "Host": "v2ray.simspeedup.com"
+          "Host": "ais.speedtest.net"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇹🇭 泰国 (Thailand) 04 - xiaohe",
-      "server": "103.107.52.106",
-      "server_port": 52351,
-      "method": "aes-256-gcm",
-      "password": "sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c="
     },
     {
       "type": "selector",
