@@ -5,22 +5,26 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 01 - xiaohe",
-      "server": "212.227.235.66",
-      "server_port": 2053,
-      "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe",
+      "server": "hydra.yokkastars.com",
+      "server_port": 2443,
+      "uuid": "5e679ccd-1586-4d5f-b87b-48251046cad8",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk",
-          "short_id": "29e8dcd2b37aaa7f"
+          "public_key": "h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg",
+          "short_id": "92c32de179e5d908"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "rex-eb0bf76b710ce763"
       }
     },
     {
@@ -28,14 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇸 西班牙 (Spain) 01 - xiaohe"
+        "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇸 西班牙 (Spain) 01 - xiaohe"
+        "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

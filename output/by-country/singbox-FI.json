@@ -1,0 +1,73 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
+      "server": "212.87.222.10",
+      "server_port": 8443,
+      "uuid": "8afeb33c-b686-43e9-a629-0d98f991ec28",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.nokia.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "f25sygANXTpzdc9YPCwkggwSmm3piA3BluSeHdfG-hg",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+      "server": "46.62.204.134",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.pleadcourt.org"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇫🇮 芬兰 (Finland) 01 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 02 - xiaohe"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇫🇮 芬兰 (Finland) 01 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 02 - xiaohe"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

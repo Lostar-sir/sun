@@ -16,7 +16,11 @@
         "insecure": false
       },
       "transport": {
-        "type": "ws"
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "9641684.sdf65h4.top"
+        }
       }
     },
     {
