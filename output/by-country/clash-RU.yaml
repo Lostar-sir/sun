@@ -20,7 +20,19 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: xsru1.ddnsfree.com
+  server: 77.90.61.135
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8815925b-c7b8-4f94-9c24-9dc864f63a29
+  tls: true
+  reality-opts:
+    public-key: XlEzAhUOUC-hZA2Uk2sctG5WR9lPeAUAHGNQVu9oAVg
+    short-id: ce1dc482
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  server: 147.45.175.81
   port: 443
   udp: true
   type: vless
@@ -28,10 +40,17 @@ proxies:
   tls: true
   servername: xsru1.ddnsfree.com
   skip-cert-verify: false
-  client-fingerprint: random
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-ru
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: nQeEoXC5Yl5PZnPLvKUpFTU9cyQcNG902zpibWkwGbo=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +58,8 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -46,5 +67,7 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
 rules:
 - MATCH,PROXIES
