@@ -27,14 +27,6 @@ proxies:
     public-key: f25sygANXTpzdc9YPCwkggwSmm3piA3BluSeHdfG-hg
   servername: www.nokia.com
   client-fingerprint: ''
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 65.109.209.239
-  port: 16911
-  udp: true
-  type: vmess
-  uuid: c5f59d68-5a26-40b8-a086-2f531e06737c
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,7 +34,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -50,6 +41,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
 rules:
 - MATCH,PROXIES
