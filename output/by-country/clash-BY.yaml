@@ -35,6 +35,8 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
+    headers:
+      Host: 178.172.227.228
 proxy-groups:
 - name: PROXIES
   type: select
