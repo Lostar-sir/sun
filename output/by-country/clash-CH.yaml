@@ -12,12 +12,27 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
 - name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
+  server: 116.204.164.30
+  port: 7443
+  udp: true
+  type: vless
+  uuid: d5f29a64-da5d-4f99-b3c4-ae92cc39ad5f
+  tls: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+- name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   server: 140.238.213.114
   port: 50160
   udp: true
   type: hysteria2
   password: 84a506ca5aca505696a454d828420b3f
-  sni: 'off'
+  sni: 140.238.213.114
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -26,6 +41,7 @@ proxy-groups:
   - AUTO
   - 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -33,5 +49,6 @@ proxy-groups:
   proxies:
   - 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
 rules:
 - MATCH,PROXIES
