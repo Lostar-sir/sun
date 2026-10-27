@@ -4,28 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  server: 156.239.224.107
-  port: 57278
+- name: 🌐 其他地区 (Other) 01 - xiaohe
+  server: 104.17.121.9
+  port: 443
   udp: true
-  type: vmess
-  uuid: 1270bed5-f908-4ecc-f1c8-de246033b186
-  alterId: 0
-  cipher: auto
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 rules:
 - MATCH,PROXIES

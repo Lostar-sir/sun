@@ -10,8 +10,8 @@ proxies:
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: connectwithemployerstohireyouridealteam.com
-  skip-cert-verify: false
+  sni: 45.63.30.142
+  skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   server: au.tronsg.com
   port: 443
@@ -19,7 +19,20 @@ proxies:
   type: trojan
   password: Trojan@82164024
   sni: au.tronsg.com
-  skip-cert-verify: false
+  skip-cert-verify: true
+- name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
+  server: funagfrdfs.alixxplay.com
+  port: 54528
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
+    short-id: 54cca3c1c1c7
+  servername: www.apple.com
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -27,6 +40,7 @@ proxy-groups:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -34,5 +48,6 @@ proxy-groups:
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
 rules:
 - MATCH,PROXIES
