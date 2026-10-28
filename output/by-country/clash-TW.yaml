@@ -10,9 +10,17 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'off'
+  sni: 160.187.100.109
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
+  server: 103.115.109.49
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/oneclickvpnkeys
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   server: 83.147.14.168
   port: 9443
   udp: true
@@ -25,14 +33,6 @@ proxies:
     short-id: b390142456517acc
   servername: www.amazon.com
   client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  server: 103.115.109.49
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2
-  skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
   server: 60.248.219.78
   port: 443
