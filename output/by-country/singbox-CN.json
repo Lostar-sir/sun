@@ -5,20 +5,20 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
-      "server": "216.24.57.225",
-      "server_port": 2083,
-      "uuid": "3bcbd7ef-e05b-4745-a1de-5ecf98dd2fb6",
+      "tag": "🇨🇳 CN 01 - xiaohe",
+      "server": "8.35.211.242",
+      "server_port": 443,
+      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
       "tls": {
         "enabled": true,
-        "server_name": "pol.netvia.ir",
+        "server_name": "vpn.cintaku.qzz.io",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/wss",
+        "path": "/vlessws",
         "headers": {
-          "Host": "pol.netvia.ir"
+          "Host": "vpn.cintaku.qzz.io"
         }
       }
     },
@@ -27,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
+        "🇨🇳 CN 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
+        "🇨🇳 CN 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

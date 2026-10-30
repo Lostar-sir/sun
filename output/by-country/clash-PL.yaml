@@ -5,31 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: 168.222.43.53
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   server: 155.117.5.208
   port: 20001
   udp: true
   type: vless
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: pol.rvpn.app
-  port: 8388
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  server: 168.222.43.53
+  port: 2052
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 8z2OB_gvFvpKgjFi8s9Cvw
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  server: 70.34.252.255
+  type: vless
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
+  server: 92.118.150.146
   port: 443
   udp: true
   type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
+  password: Trojan@82164024
+  sni: pl.tronsg.com
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  server: 2.26.6.1
+  port: 2087
+  udp: true
+  type: vless
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  tls: true
+  servername: 2.26.6.1
   skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 05 - xiaohe
   server: 54.37.131.126
@@ -45,14 +47,18 @@ proxies:
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇵🇱 波兰 (Poland) 06 - xiaohe
-  server: 2.26.6.1
-  port: 2087
+  server: 201.58.181.231
+  port: 4443
   udp: true
   type: vless
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  uuid: fafc7c16-f890-45ee-a856-02df225172dd
+  flow: xtls-rprx-vision
   tls: true
-  servername: 2.26.6.1
-  skip-cert-verify: false
+  reality-opts:
+    public-key: kn7Lh0yi6CYrHW5KpiQrfrs9FED-mbbEEKgOoiDkx2M
+    short-id: 858affa9443ebac6
+  servername: www.kinopoisk.ru
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
