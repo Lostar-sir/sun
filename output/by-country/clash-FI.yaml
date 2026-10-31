@@ -31,7 +31,7 @@ proxies:
     headers:
       Host: hw6.divarkhaghazi.com.
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: hw3.divarkhaghazi.com
+  server: hw3.divarkhaghazi.com.
   port: 465
   udp: true
   type: vless
@@ -43,8 +43,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
 proxy-groups:
 - name: PROXIES
   type: select
