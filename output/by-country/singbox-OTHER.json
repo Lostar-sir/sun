@@ -4,19 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "n04.jinggai.online",
-      "server_port": 8443,
-      "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
+      "server": "www.gptcloudai.com",
+      "server_port": 443,
+      "uuid": "e70a5b70-f63c-4450-af8b-94990cdf80c0",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "n04.jinggai.online",
+        "server_name": "www.gptcloudai.com",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/nvl-n04-ws/e0577fe8fd7c8823"
+        "path": "/truth",
+        "headers": {
+          "Host": "www.gptcloudai.com"
+        }
       }
     },
     {
