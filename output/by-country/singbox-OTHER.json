@@ -4,15 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇧🇷 巴西 (Brazil) 01 - xiaohe",
-      "server": "216.238.104.154",
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "www.windowsmsidownloads.com",
       "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "uuid": "80be2deb-3b27-4775-9bd1-7f2a2b9c261b",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "findtemporaryworkandfreelancerprojectsonlineplatform.com",
+        "server_name": "www.windowsmsidownloads.com",
         "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/truth",
+        "headers": {
+          "Host": "www.windowsmsidownloads.com"
+        }
       }
     },
     {
@@ -20,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
