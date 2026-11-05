@@ -4,22 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.21.86.152",
+      "type": "vless",
+      "tag": "🇨🇳 CN 01 - xiaohe",
+      "server": "104.17.11.191",
       "server_port": 443,
-      "uuid": "83b09a64-1eaf-4c4d-89ed-866d4b6b8115",
-      "security": "auto",
+      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
       "tls": {
         "enabled": true,
-        "server_name": "www.ubuntuupdates.com",
-        "insecure": false
+        "server_name": "vpn.cintaku.qzz.io",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/truth",
+        "path": "/vlessws",
         "headers": {
-          "Host": "www.ubuntuupdates.com"
+          "Host": "vpn.cintaku.qzz.io"
         }
       }
     },
@@ -28,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇨🇳 CN 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇨🇳 CN 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

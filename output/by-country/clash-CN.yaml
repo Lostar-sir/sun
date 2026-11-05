@@ -4,33 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.21.86.152
+- name: 🇨🇳 CN 01 - xiaohe
+  server: 104.17.11.191
   port: 443
   udp: true
-  type: vmess
-  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
   tls: true
-  servername: www.ubuntuupdates.com
+  servername: vpn.cintaku.qzz.io
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /truth
+    path: /vlessws
     headers:
-      Host: www.ubuntuupdates.com
+      Host: vpn.cintaku.qzz.io
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇨🇳 CN 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇨🇳 CN 01 - xiaohe
 rules:
 - MATCH,PROXIES
