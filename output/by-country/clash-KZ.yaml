@@ -5,18 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
-  server: kz-cdn-prsv-forum.keno.su
-  port: 443
+  server: 38.107.234.57
+  port: 80
   udp: true
-  type: vless
-  uuid: dc95c1dd-2cd3-414c-8cf1-71ae86dad666
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Au1rmQdDRjlEJk17IfLQv5PBUEEosMWNhAlrWZj6mnY
-    short-id: '14324280'
-  servername: kz-cdn-prsv-forum.keno.su
-  client-fingerprint: firefox
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 38.107.234.57
 proxy-groups:
 - name: PROXIES
   type: select
