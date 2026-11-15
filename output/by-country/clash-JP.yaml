@@ -5,29 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - xiaohe
-  server: 138.3.208.26
-  port: 50160
+  server: 168.138.205.100
+  port: 53758
   udp: true
-  type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: '1'
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-128-gcm
+  password: Bwlqh7GcFB
 - name: 🇯🇵 日本 (Japan) 02 - xiaohe
-  server: JP032001.ssgreen.org
+  server: 8.209.247.109
   port: 443
   udp: true
-  type: vmess
-  uuid: 16586ea9-a30d-4323-97f3-1907b27f439f
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: JP032001.ssgreen.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: JP032001.ssgreen.org
+  type: hysteria2
+  password: usqmqUKJFIlCmvkCNSY64L3k
+  sni: bing.com
+  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 03 - xiaohe
   server: 84.247.155.196
   port: 80
@@ -44,18 +35,29 @@ proxies:
   sni: 8.211.175.236
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 05 - xiaohe
-  server: zfapi.zalolink.com
-  port: 43149
+  server: 138.3.208.26
+  port: 50160
   udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
+  type: hysteria2
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: '1'
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 06 - xiaohe
+  server: 162.159.135.234
+  port: 2083
+  udp: true
+  type: vmess
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
   tls: true
-  reality-opts:
-    public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
-    short-id: 15aa0ad4
-  servername: psstatic.cdn.bcebos.com
-  client-fingerprint: firefox
+  servername: cdn.sfacg.uk
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /or3
+    headers:
+      Host: or3.sfacg.uk
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,6 +68,7 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 03 - xiaohe
   - 🇯🇵 日本 (Japan) 04 - xiaohe
   - 🇯🇵 日本 (Japan) 05 - xiaohe
+  - 🇯🇵 日本 (Japan) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -76,5 +79,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 03 - xiaohe
   - 🇯🇵 日本 (Japan) 04 - xiaohe
   - 🇯🇵 日本 (Japan) 05 - xiaohe
+  - 🇯🇵 日本 (Japan) 06 - xiaohe
 rules:
 - MATCH,PROXIES

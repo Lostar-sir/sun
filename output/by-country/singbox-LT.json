@@ -12,10 +12,7 @@
       "tls": {
         "enabled": true,
         "server_name": "775c8bt.lt4.h1clayd.click",
-        "insecure": true,
-        "alpn": [
-          "h3"
-        ]
+        "insecure": true
       }
     },
     {
