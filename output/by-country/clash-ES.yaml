@@ -38,22 +38,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: random
 - name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
-  server: 66.163.118.40
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: cdn.discovergreatjobsandadvanceyourcareer.com
-  skip-cert-verify: false
-- name: 🇪🇸 西班牙 (Spain) 06 - xiaohe
-  server: 66.163.118.115
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: discovergreatjobsandadvanceyourcareer.com
-  skip-cert-verify: false
-- name: 🇪🇸 西班牙 (Spain) 07 - xiaohe
   server: 66.163.118.251
   port: 443
   udp: true
@@ -61,7 +45,36 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: resources.discovergreatjobsandadvanceyourcareer.com
   skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 06 - xiaohe
+  server: 66.163.118.131
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: www.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 07 - xiaohe
+  server: 46.28.71.247
+  port: 443
+  udp: true
+  type: vless
+  uuid: 12c53e32-e589-47d6-b857-e4132294f767
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
+    short-id: 0dfc23fe80778c00
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 08 - xiaohe
+  server: 66.163.118.115
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 09 - xiaohe
   server: 196.196.149.80
   port: 443
   udp: true
@@ -73,15 +86,7 @@ proxies:
     public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
     short-id: 42426c882c5fcd41
   servername: 7aa271t.es1.h1clayd.click
-  client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 09 - xiaohe
-  server: 66.163.118.131
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: www.discovergreatjobsandadvanceyourcareer.com
-  skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
