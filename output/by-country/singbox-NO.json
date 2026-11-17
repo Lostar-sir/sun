@@ -4,23 +4,31 @@
   },
   "outbounds": [
     {
+      "type": "shadowsocks",
+      "tag": "🇳🇴 挪威 (Norway) 01 - xiaohe",
+      "server": "185.213.23.63",
+      "server_port": 990,
+      "method": "chacha20-ietf-poly1305",
+      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    },
+    {
       "type": "vless",
-      "tag": "🇪🇬 埃及 (Egypt) 01 - xiaohe",
-      "server": "41.196.0.128",
+      "tag": "🇳🇴 挪威 (Norway) 02 - xiaohe",
+      "server": "193.243.189.64",
       "server_port": 443,
       "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "eg1.gofizz.in",
+        "server_name": "no1.gofizz.in",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
-          "public_key": "tyklNbOfb-FctP-J1OQa1yUHPY9p4co70RyYuRe9nR8",
-          "short_id": "f68db13f"
+          "public_key": "631qtx5_iiR8HBYdp3duf2SMqdN0URE1AWVb85I_FFg",
+          "short_id": "b12c3119d219dc"
         }
       }
     },
@@ -29,14 +37,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇬 埃及 (Egypt) 01 - xiaohe"
+        "🇳🇴 挪威 (Norway) 01 - xiaohe",
+        "🇳🇴 挪威 (Norway) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇬 埃及 (Egypt) 01 - xiaohe"
+        "🇳🇴 挪威 (Norway) 01 - xiaohe",
+        "🇳🇴 挪威 (Norway) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
