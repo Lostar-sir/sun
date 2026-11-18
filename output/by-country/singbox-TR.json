@@ -6,17 +6,24 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "185.39.204.117",
-      "server_port": 10002,
-      "uuid": "facb802c-de2e-11f1-9a22-a3404e852f3b",
+      "server": "87.76.154.28",
+      "server_port": 57231,
+      "uuid": "c34a41b6-598f-46ac-bea3-8b39a906f922"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
+      "server": "panel.autonetshop.ir",
+      "server_port": 43345,
+      "password": "d1gkicdgem3bsoaa",
       "tls": {
         "enabled": true,
-        "server_name": "tr2.vpnjantit.com",
+        "server_name": "panel.autonetshop.ir",
         "insecure": false
       },
-      "transport": {
-        "type": "ws",
-        "path": "/vpnjantit"
+      "obfs": {
+        "type": "salamander",
+        "password": "km9oqmefh2km1i5n"
       }
     },
     {
@@ -24,14 +31,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
