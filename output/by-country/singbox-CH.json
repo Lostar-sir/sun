@@ -42,12 +42,12 @@
     {
       "type": "trojan",
       "tag": "🇨🇭 瑞士 (Switzerland) 05 - xiaohe",
-      "server": "208.69.78.60",
+      "server": "208.69.78.222",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "cdn.yourultimateprofessionalcareerhub.com",
+        "server_name": "yourultimateprofessionalcareerhub.com",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -94,6 +94,18 @@
     {
       "type": "trojan",
       "tag": "🇨🇭 瑞士 (Switzerland) 09 - xiaohe",
+      "server": "208.69.78.33",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "courses.yourultimateprofessionalcareerhub.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇨🇭 瑞士 (Switzerland) 10 - xiaohe",
       "server": "208.69.78.29",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -101,27 +113,6 @@
         "enabled": true,
         "server_name": "learn.yourultimateprofessionalcareerhub.com",
         "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 10 - xiaohe",
-      "server": "45.90.59.15",
-      "server_port": 443,
-      "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY",
-          "short_id": "19253fae84102271"
-        }
       }
     },
     {
