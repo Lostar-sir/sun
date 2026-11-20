@@ -5,21 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.21.70.21
+  server: 104.18.10.153
   port: 443
   udp: true
   type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
   tls: true
-  servername: jp3.yohototo.top
+  servername: portland-wins-robbie-skirt.trycloudflare.com
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /e0843c8ad581
     headers:
-      Host: jp3.yohototo.top
+      Host: portland-wins-robbie-skirt.trycloudflare.com
 - name: 🌐 其他地区 (Other) 02 - xiaohe
-  server: 104.21.70.21
+  server: 188.114.98.0
   port: 443
   udp: true
   type: vless
@@ -27,14 +28,33 @@ proxies:
   tls: true
   servername: jp3.yohototo.top
   skip-cert-verify: false
-  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 03 - xiaohe
-  server: 104.21.70.21
+  server: 188.114.98.0
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0280c276-641b-49af-b699-4931c30ac137
+  tls: true
+  servername: norway.xn--nlqaa425dbaab446bbabd698meae.online
+  skip-cert-verify: false
+  client-fingerprint: unsafe
+- name: 🌐 其他地区 (Other) 04 - xiaohe
+  server: 188.114.98.0
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0280c276-641b-49af-b699-4931c30ac137
+  tls: true
+  servername: norway.xn--nlqaa425dbaab446bbabd698meae.online
+  skip-cert-verify: false
+  client-fingerprint: unsafe
+- name: 🌐 其他地区 (Other) 05 - xiaohe
+  server: 188.114.98.0
   port: 443
   udp: true
   type: vless
@@ -42,10 +62,25 @@ proxies:
   tls: true
   servername: jp3.yohototo.top
   skip-cert-verify: false
-  client-fingerprint: edge
+  client-fingerprint: unsafe
   network: ws
   ws-opts:
-    path: tyxyws
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 06 - xiaohe
+  server: 188.114.98.0
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /tyxyws
     headers:
       Host: jp3.yohototo.top
 proxy-groups:
@@ -56,6 +91,9 @@ proxy-groups:
   - 🌐 其他地区 (Other) 01 - xiaohe
   - 🌐 其他地区 (Other) 02 - xiaohe
   - 🌐 其他地区 (Other) 03 - xiaohe
+  - 🌐 其他地区 (Other) 04 - xiaohe
+  - 🌐 其他地区 (Other) 05 - xiaohe
+  - 🌐 其他地区 (Other) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,5 +102,8 @@ proxy-groups:
   - 🌐 其他地区 (Other) 01 - xiaohe
   - 🌐 其他地区 (Other) 02 - xiaohe
   - 🌐 其他地区 (Other) 03 - xiaohe
+  - 🌐 其他地区 (Other) 04 - xiaohe
+  - 🌐 其他地区 (Other) 05 - xiaohe
+  - 🌐 其他地区 (Other) 06 - xiaohe
 rules:
 - MATCH,PROXIES
