@@ -4,32 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.18.11.153
+- name: 🇮🇩 印尼 (Indonesia) 01 - xiaohe
+  server: 104.17.3.81
   port: 443
   udp: true
   type: vless
-  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
+  uuid: 12d67d2b-ae5c-4d56-9f14-d71d96f7826f
   tls: true
-  servername: portland-wins-robbie-skirt.trycloudflare.com
+  servername: natan.srpcom.cloud
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /e0843c8ad581
+    path: /vlessws
     headers:
-      Host: portland-wins-robbie-skirt.trycloudflare.com
+      Host: natan.srpcom.cloud
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇮🇩 印尼 (Indonesia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇮🇩 印尼 (Indonesia) 01 - xiaohe
 rules:
 - MATCH,PROXIES
