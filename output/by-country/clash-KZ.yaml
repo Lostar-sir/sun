@@ -12,7 +12,7 @@ proxies:
   uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
   tls: true
   servername: 3h-kazakhstan1.09vpn.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /vless/

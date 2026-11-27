@@ -12,7 +12,7 @@
       "tls": {
         "enabled": true,
         "server_name": "3h-kazakhstan1.09vpn.com",
-        "insecure": false
+        "insecure": true
       },
       "transport": {
         "type": "ws",
